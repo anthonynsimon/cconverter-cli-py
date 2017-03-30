@@ -1,7 +1,7 @@
 import argparse
 
-import commands
-import httpclient
+from cconvertercli import commands
+from cconvertercli import httpclient
 
 
 def parse_args():

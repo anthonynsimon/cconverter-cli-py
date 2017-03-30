@@ -1,5 +1,6 @@
-import cmd
 import os
+
+from cconvertercli import cmd
 
 if __name__ == '__main__':
     args = cmd.parse_args()
