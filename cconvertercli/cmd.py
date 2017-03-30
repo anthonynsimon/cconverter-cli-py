@@ -30,7 +30,7 @@ def apply(args):
     api_client = httpclient.HttpClient(args.apihost)
     return {
         'rates': lambda: commands.get_rates(api_client, args.currency),
-        'convert': lambda: commands.convert(api_client, args.base, args.to, args.amount),
+        'convert': lambda: commands.convert(api_client, args.base, args.target, args.amount),
         'normalize': lambda: commands.normalize(api_client, args.filepath, args.target, args.output),
         None: 'unknown command'
     }[args.command]()

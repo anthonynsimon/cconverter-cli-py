@@ -5,6 +5,6 @@ if __name__ == '__main__':
     args = cmd.parse_args()
 
     if "CCONVERTER_DEBUG" in os.environ:
-        print(args)
+        print('DEBUG: {0}'.format(args))
 
-    print(cmd.apply(args))
+    cmd.apply(args)
